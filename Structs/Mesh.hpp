@@ -53,6 +53,7 @@ namespace quickhull {
 			std::unique_ptr<std::vector<IndexType>> m_pointsOnPositiveSide;
 
 			Face() : m_he(std::numeric_limits<IndexType>::max()),
+                     m_P(Vector3<T>(0,0,0), Vector3<T>(0,0,0)),
 					 m_mostDistantPointDist(0),
 					 m_mostDistantPoint(0),
 					 m_visibilityCheckedOnIteration(0),
